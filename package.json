@@ -4,5 +4,8 @@
   "description": "My own Discord bot",
   "main": "bot.js",
   "author": "YOUR-NAME-HERE",
-  "dependencies": {}
+  "dependencies": {
+    "discord.io": "^2.5.2",
+    "winston": "^2.3.1"
+  }
 }
