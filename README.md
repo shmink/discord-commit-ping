@@ -8,7 +8,9 @@
 * `git clone https://github.com/Shmink/discord-commit-ping.git`
 * `cd discord-commit-ping`
 * Add file called `auth.json` with the contents:
- 	`{`
-   		`"token": "YOUR-BOT-TOKEN-HERE"`
-	`}`
+```json
+{
+	"token": "YOUR-BOT-TOKEN-HERE"
+}
+```
 * Finally, `node bot.js`
