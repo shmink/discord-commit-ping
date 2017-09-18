@@ -1,9 +1,9 @@
 {
-  "name": "greeter-bot",
-  "version": "1.0.0",
-  "description": "My own Discord bot",
+  "name": "Commiter",
+  "version": "0.1",
+  "description": "A discord bot to monitor your GitHub repositories.",
   "main": "bot.js",
-  "author": "YOUR-NAME-HERE",
+  "author": "Tom Nicklin",
   "dependencies": {
     "discord.io": "^2.5.2",
     "winston": "^2.3.1"
