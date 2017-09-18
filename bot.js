@@ -1,5 +1,6 @@
 var Discord = require('discord.io');
 var logger = require('winston');
+var GitHub = require('github')
 var auth = require('./auth.json');
 var repo = require('./repos.json');
 // Configure logger settings
@@ -24,7 +25,7 @@ bot.on('ready', function (evt) {
 
 bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
-    // It will listen for messages that will start with `!`
+    // It will listen for messages that will start with `-`
     if (message.substring(0, 1) == '-') { // If the first character of a string is '-' then it's a command
         var args = message.substring(1).split(' ');
         var cmd = args[0];
@@ -53,6 +54,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: repo.link
+                });
+            break;
+            // -a | -all = Display all commits
+            // This seems pointless, need to use GitHub API for more useful data
+            case 'a':
+            case 'all':
+                bot.sendMessage({
+                    to: channelID,
+                    message: repo.link + '/commits/'
                 });
             break;
          }

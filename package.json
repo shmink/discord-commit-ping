@@ -1,11 +1,12 @@
 {
   "name": "Commiter",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "A discord bot to monitor your GitHub repositories.",
   "main": "bot.js",
   "author": "Tom Nicklin",
   "dependencies": {
     "discord.io": "^2.5.2",
+    "github": "^11.0.0",
     "winston": "^2.3.1"
   }
 }
