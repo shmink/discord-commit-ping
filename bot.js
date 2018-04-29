@@ -48,7 +48,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: repo.name
                 });
             break;
-            // -l | -link = Link of the repo added
+            // -s | -source = Link of the repo you want to manages
             case 'source':
             case 's':
                 bot.sendMessage({
