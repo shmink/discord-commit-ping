@@ -5,8 +5,9 @@
   "main": "bot.js",
   "author": "Tom Nicklin",
   "dependencies": {
-    "discord.io": "^2.5.2",
+    "discord.io": "^2.5.3",
     "github": "^11.0.0",
-    "winston": "^2.3.1"
+    "github-api": "^3.0.0",
+    "winston": "^2.4.2"
   }
 }

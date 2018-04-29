@@ -29,7 +29,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     if (message.substring(0, 1) == '-') { // If the first character of a string is '-' then it's a command
         var args = message.substring(1).split(' ');
         var cmd = args[0];
-       
+
         args = args.splice(1);
         switch(cmd) {
             // -v | -version = Version number of commiter bot
@@ -49,8 +49,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 });
             break;
             // -l | -link = Link of the repo added
-            case 'link':
-            case 'l':
+            case 'source':
+            case 's':
                 bot.sendMessage({
                     to: channelID,
                     message: repo.link
